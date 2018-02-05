@@ -32,9 +32,12 @@
             .content {
                 position: absolute;
                 width: 100%;
+                height: 40%;
                 top: 40%;
                 transform: translate(0, -50%);
                 text-align: center;
+                color:rgb(200,200,200);
+                background:rgba(0,0,0,0.7);
             }
             
             .timer {
@@ -71,9 +74,12 @@
             .content {
                 position: absolute;
                 width: 100%;
+                height: 40%;
                 top: 40%;
                 transform: translate(0, -50%);
                 text-align: center;
+                color:rgb(200,200,200);
+                background:rgba(0,0,0,0.7);
             }
             
             .timer {
@@ -93,7 +99,7 @@
 
 <body>
     <div class="content">
-        <h2>呆呆，我们已经在一起了</h2>
+        <h2>距离2018年毕业还有</h2>
         <div class="timer">
             <b id="d"></b> Days <b id="h"></b> Hours <b id="m"></b> Minutes <b id="s"></b> Seconds
         </div>
@@ -101,8 +107,8 @@
 
     <script>
         function timer() {
-            var start = new Date(2013, 12, 1); // 2015.7.2
-            var t = new Date() - start;
+            var start = new Date(2018, 6, 30); // 2015.7.2
+            var t = start - new Date();
             var h = ~~(t / 1000 / 60 / 60 % 24);
             if (h < 10) {
                 h = "0" + h;
