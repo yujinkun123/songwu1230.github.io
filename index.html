@@ -103,7 +103,7 @@
     <div class="content">
         <h2>距离2018年春节还有</h2>
         <div class="timer">
-        	<b id="now"></b>
+            <b id="now"></b>
             <b id="d"></b> Days <b id="h"></b> Hours <b id="m"></b> Minutes <b id="s"></b> Seconds
         </div>
     </div>
@@ -125,7 +125,7 @@
             if (s < 10) {
                 s = "0" + s;
             }
-            document.getElementById('now').innerHTML = new Date();
+            document.getElementById('now').innerHTML = ~~(new Date());
             document.getElementById('d').innerHTML = ~~(t / 1000 / 60 / 60 / 24);
             document.getElementById('h').innerHTML = h;
             document.getElementById('m').innerHTML = m;
